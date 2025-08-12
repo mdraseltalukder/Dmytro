@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sample Page with CSS, JS & Font Awesome</title>
+
+    <!-- Link to external CSS file (create css/style.css) -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Font Awesome (CDN) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!--  Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Add any other head CSS/SEO here -->
+  </head>
+  <body>
+    <section>
+      <nav class="navbar">
+        <div class="nav-container">
+          <div class="logo-container">
+            <a href="/" class="logo"><img src="img/logo.png" alt="logo" /></a>
+          </div>
+          <!-- Desktop Menu -->
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="#" class="nav-link">About&nbsp;Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                Why&nbsp;BookTix
+                <img src="img/down-arrow.svg" alt="down-arrow" />
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                Customers
+                <img src="img/down-arrow.svg" alt="down-arrow" />
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Resources</a>
+            </li>
+          </ul>
+
+          <!-- Desktop Actions -->
+          <div class="nav-actions">
+            <a href="#" class="btn-outline btn">
+              <img src="img/Headset.png" alt="headphone" />
+              Get&nbsp;Help
+            </a>
+            <a href="#" class="btn btn-primary">
+              Let's&nbsp;Connect
+              <svg class="arrow-icon" viewBox="0 0 20 20" fill="currentColor">
+                <path
+                  fill-rule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </a>
+          </div>
+
+          <!-- Mobile Toggle -->
+          <button class="mobile-toggle" id="mobileToggle">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Mobile Overlay -->
+      <div class="mobile-overlay" id="mobileOverlay"></div>
+
+      <!-- Mobile Menu -->
+      <div class="mobile-menu" id="mobileMenu">
+        <!-- close menu -->
+        <button
+          id="mobileClose"
+          class="mobile-close-btn"
+          aria-label="Close Menu"
+        >
+          &times;
+        </button>
+        <ul class="mobile-nav-list">
+          <li class="mobile-nav-item">
+            <a href="#" class="mobile-nav-link">About Us</a>
+          </li>
+          <li class="mobile-nav-item">
+            <a href="#" class="mobile-nav-link">
+              Why BookTix
+              <img src="img/down-arrow.svg" alt="down-arrow" />
+            </a>
+          </li>
+          <li class="mobile-nav-item">
+            <a href="#" class="mobile-nav-link">
+              Customers
+              <img src="img/down-arrow.svg" alt="down-arrow" />
+            </a>
+          </li>
+          <li class="mobile-nav-item">
+            <a href="#" class="mobile-nav-link">Pricing</a>
+          </li>
+          <li class="mobile-nav-item">
+            <a href="#" class="mobile-nav-link">Resources</a>
+          </li>
+        </ul>
+
+        <div class="mobile-actions">
+          <a href="#" class="btn-outline btn">
+            <img src="img/Headset.png" alt="headphone" />
+            Get Help
+          </a>
+          <a href="#" class="btn btn-primary">
+            Let's Connect
+            <svg class="arrow-icon" viewBox="0 0 20 20" fill="currentColor">
+              <path
+                fill-rule="evenodd"
+                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- hero-sec -->
+    <section class="hero-sec">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Easy Online Ticketing With Real Support</h1>
+          <p>
+            You care deeply about your event and so do we. BookTix gives you
+            real tools and real support, built by people who’ve stood where you
+            stand.
+          </p>
+          <div class="buttons">
+            <button class="gradient-btn">Book A Demo</button>
+            <button class="outline-btn">How It Works</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- serve-sec  -->
+    <section>
+      <div class="serve-section">
+        <div class="serve">
+          <div class="serve-heading">
+            <div class="section-label">WHO WE SERVE</div>
+            <h2 class="main-heading">
+              We Support the People<br />Who Make Events Happen
+            </h2>
+            <p class="subtitle">
+              We work with thousands of programs across the country, from your
+              local drama club to your district's full fine arts department.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-container">
+          <div class="carousel-wrapper" id="carouselWrapper">
+            <div class="carousel-card school-theatre">
+              <div class="card-title">School Theatre</div>
+              <div class="card-description">
+                Supporting drama programs and theatrical productions in
+                educational institutions.
+              </div>
+              <button class="explore-btn gradient-btn">Explore More</button>
+            </div>
+
+            <div class="carousel-card dance-studios">
+              <div class="card-title">Dance Studios</div>
+              <div class="card-description">
+                Empowering dance studios with flexible booking and performance
+                management tools.
+              </div>
+              <button class="explore-btn gradient-btn">Explore More</button>
+            </div>
+
+            <div class="carousel-card community-theatre active">
+              <div class="card-title">Community Theatre</div>
+              <div class="card-description">
+                Avoid recital-day chaos with flexible seat assignments, VIP
+                pricing, and real-time support when you need it most.
+              </div>
+              <button class="explore-btn gradient-btn">Explore More</button>
+            </div>
+
+            <div class="carousel-card sports-athletics">
+              <div class="card-title">School Sports & Athletics</div>
+              <div class="card-description">
+                Streamline ticket sales for sporting events and athletic
+                competitions.
+              </div>
+              <button class="explore-btn gradient-btn">Explore More</button>
+            </div>
+
+            <div class="carousel-card and-more">
+              <div class="card-title">And More</div>
+              <div class="card-description">
+                Discover additional services and solutions tailored to your
+                specific needs.
+              </div>
+              <button class="explore-btn gradient-btn">Explore More</button>
+            </div>
+          </div>
+
+          <button class="nav-arrow prev" id="prevBtn">
+            <svg viewBox="0 0 24 24">
+              <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+            </svg>
+          </button>
+
+          <button class="nav-arrow next" id="nextBtn">
+            <svg viewBox="0 0 24 24">
+              <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- features sec  -->
+    <section class="features-section">
+      <div class="features-content">
+        <div class="section-label">BOOKTIX FEATURES</div>
+        <h2 class="main-heading">
+          Your Journey to Seamless Ticketing Starts Here
+        </h2>
+        <p class="subtitle">
+          No coding. No setup fees. No confusion. Just a few steps away from
+          "uh-oh" to "sold out."
+        </p>
+
+        <ul class="features-list">
+          <li class="feature-item">
+            <img src="img/Laptop.png" alt="laptop" width="36" height="36" />
+            <span class="feature-text"
+              >Fast, flexible ticket sales online and in person</span
+            >
+          </li>
+          <li class="feature-item">
+            <img src="img/Clock.png" alt="clock" />
+            <span class="feature-text"
+              >Real-time reporting that's easy to understand</span
+            >
+          </li>
+          <li class="feature-item">
+            <img src="img/Headset Mic 2 (1).png" alt="headPhone" />
+            <span class="feature-text">Support from real people</span>
+          </li>
+          <li class="feature-item">
+            <img src="img/Wallet.png" alt="" />
+            <span class="feature-text"
+              >Reliable payouts with no waiting and no red tape</span
+            >
+          </li>
+        </ul>
+
+        <button class="gradient-btn">Book A Demo</button>
+      </div>
+
+      <div class="illustration-area">
+        <div class="illustration-text">ILLUSTRATION</div>
+      </div>
+    </section>
+
+    <!-- benefit -->
+    <section class="benefit-sec">
+      <div class="container">
+        <div class="header">
+          <div class="section-label">BENEFITS</div>
+          <h2 class="main-title">
+            We're More than Software.<br />We're Your Partner Behind the Scenes.
+          </h2>
+          <p class="subtitle">
+            We've been in your shoes. That's why we built a ticketing platform
+            that actually helps.
+          </p>
+        </div>
+
+        <div class="benefits-grid">
+          <div class="main-benefit">
+            <div class="benefit-content">
+              <div class="benefit-number">01</div>
+              <h4 class="">Make Every Seat Count</h4>
+            </div>
+            <p class="benefit-description">
+              From dance recitals to community productions, we simplify ticket
+              sales with reserved seating, promotion tools, and live tracking
+              for easy planning and upselling.
+            </p>
+          </div>
+
+          <div class="side-benefits">
+            <div class="side-benefit">
+              <div class="benefit-number">02</div>
+              <h4 class="benefit-title">
+                Turn Ticketing Into a Fundraising Engine
+              </h4>
+            </div>
+
+            <div class="side-benefit">
+              <div class="benefit-number">03</div>
+              <h4 class="benefit-title">
+                Grow a Loyal Audience, Not Just a Crowd
+              </h4>
+            </div>
+
+            <div class="side-benefit">
+              <div class="benefit-number">04</div>
+              <h4 class="benefit-title">All Your Event Data in One Place</h4>
+            </div>
+
+            <div class="side-benefit">
+              <div class="benefit-number">05</div>
+              <h4 class="benefit-title">
+                You Handle the Show and We'll Handle the Setup
+              </h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="cta-section">
+          <a href="#" class="demo-btn gradient-btn">Book A Demo</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- testimonial section -->
+    <section class="testimonials-section">
+      <div class="section-header"></div>
+
+      <div class="testimonial-container">
+        <div class="">
+          <div class="section-label testimonial-label">
+            The BookTix Difference, In Their Words
+          </div>
+          <div class="testimonial-content">
+            <div class="testimonials">
+              <div class="testimonial">
+                <div class="rating">
+                  <div class="stars">
+                    <span class="star"><i class="fa-solid fa-star"></i></span>
+                    <span class="star"><i class="fa-solid fa-star"></i></span>
+                    <span class="star"><i class="fa-solid fa-star"></i></span>
+                    <span class="star"><i class="fa-solid fa-star"></i></span>
+                    <span class="star"><i class="fa-solid fa-star"></i></span>
+                  </div>
+                  <span class="rating-label">Dance Studio</span>
+                </div>
+
+                <div class="testimonial-text">
+                  <h2>
+                    Feature rich and <span class="highlight">easy to use</span>.
+                    They are super responsive whenever I have a question or
+                    request and are always happy to help.
+                  </h2>
+                </div>
+
+                <div class="customer-info">
+                  <img
+                    src="img/Ellipse 129.png"
+                    alt="Chris Satola"
+                    class="customer-avatar"
+                  />
+                  <div class="customer-details">
+                    <div class="customer-detail">
+                      <h4>Chris Satola</h4>
+                      <p>Events manager</p>
+                    </div>
+                    <p>Garfield Heights Center For The Performing Arts / OH</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-navigation">
+              <div class="nav-counter">
+                <span class="current">01</span> /
+                <span class="total">10</span>
+              </div>
+              <div class="nav-buttons">
+                <button class="nav-btn" onclick="previousTestimonial()">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                    width="20"
+                    height="20"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
+                    />
+                  </svg>
+                </button>
+                <button class="nav-btn active" onclick="nextTestimonial()">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                    width="20"
+                    height="20"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-image">
+          <img src="img/testimonial.png" alt="Dance Performance" />
+        </div>
+      </div>
+
+      <div class="trusted-section">
+        <div class="trusted-label">
+          Trusted by Top Organizations Around the Globe
+        </div>
+        <div class="logos-grid">
+          <img src="img/icon1.png" alt="Trinity Health" class="icon-logo" />
+          <img src="img/icon2.png" alt="Trinity Health" class="icon-logo" />
+          <img src="img/icon3.png" alt="Trinity Health" class="icon-logo" />
+          <img src="img/icon4.png" alt="Trinity Health" class="icon-logo" />
+          <img src="img/icon5.png" alt="Trinity Health" class="icon-logo" />
+          <img src="img/icon6.png" alt="Trinity Health" class="icon-logo" />
+          <img src="img/icon1.png" alt="Trinity Health" class="icon-logo" />
+          <img src="img/icon2.png" alt="Trinity Health" class="icon-logo" />
+          <img src="img/icon3.png" alt="Trinity Health" class="icon-logo" />
+          <img src="img/icon4.png" alt="Trinity Health" class="icon-logo" />
+          <img src="img/icon5.png" alt="Trinity Health" class="icon-logo" />
+          <img src="img/icon6.png" alt="Trinity Health" class="icon-logo" />
+        </div>
+      </div>
+    </section>
+
+    <!-- contact -->
+    <section class="contact-section">
+      <!-- Left Content -->
+      <div class="contact container">
+        <div class="content">
+          <div class="header-text">Start Today</div>
+          <h2 class="main-heading-contact" style="color: white">
+            Affordable Pricing, No Hidden Fees
+          </h2>
+          <p class="description">
+            Experience seamless ticketing with no upfront costs. Only pay when
+            you sell your tickets.
+          </p>
+        </div>
+
+        <!-- Center Illustration -->
+        <div class="illustration-placeholder">ILLUSTRATION</div>
+
+        <!-- Right Contact Form -->
+        <div class="contact-form">
+          <form>
+            <div class="form-group">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="input-icon"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M7.5 6a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM3.751 20.105a8.25 8.25 0 0 1 16.498 0 .75.75 0 0 1-.437.695A18.683 18.683 0 0 1 12 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 0 1-.437-.695Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+
+              <input
+                type="text"
+                class="form-input"
+                placeholder="Name *"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="input-icon"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+
+              <input type="tel" class="form-input" placeholder="Phone" />
+            </div>
+
+            <div class="form-group">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="input-icon"
+              >
+                <path
+                  d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z"
+                />
+                <path
+                  d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z"
+                />
+              </svg>
+
+              <input
+                type="email"
+                class="form-input"
+                placeholder="Email *"
+                required
+              />
+            </div>
+
+            <button type="submit" class="submit-btn">Contact our Team</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <!-- Header Section -->
+        <div class="footer-header">
+          <h2 class="footer-title">How Can We Help?</h2>
+          <div class="footer-buttons">
+            <a href="#" class="btn btn-primary gradient-btn">Book A Demo</a>
+            <a href="#" class="btn-outline btn">Call Us</a>
+          </div>
+        </div>
+
+        <!-- Main Footer Content -->
+        <div class="footer-content">
+          <!-- Navigation Column -->
+          <div class="footer-column">
+            <h3>Navigation</h3>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">How It Works</a></li>
+              <li><a href="#">Why Us</a></li>
+              <li><a href="#">Testimonials</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Articles</a></li>
+              <li><a href="#">Feedback</a></li>
+              <li><a href="#">Vacancies</a></li>
+            </ul>
+          </div>
+
+          <!-- Info Column -->
+          <div class="footer-column">
+            <h3>Info</h3>
+            <ul>
+              <li><a href="#">Organizations</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Patron Support</a></li>
+            </ul>
+          </div>
+
+          <!-- Placeholder Column -->
+          <div class="footer-column">
+            <h3>Placeholder</h3>
+            <ul>
+              <li><a href="#">Link 1</a></li>
+              <li><a href="#">Link 2</a></li>
+              <li><a href="#">Link 3</a></li>
+            </ul>
+          </div>
+
+          <!-- Social Links Column -->
+          <div class="footer-column">
+            <h3>Social Links</h3>
+            <div class="social-links">
+              <a href="#" class="social-link" aria-label="Instagram">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="social-link" aria-label="Facebook">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="social-link" aria-label="YouTube">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Contact Column -->
+          <div class="footer-column">
+            <h3>Contact us</h3>
+            <div class="contact-info">
+              <p>+1 891 989-11-91</p>
+              <p>help@booktix.com</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Newsletter Section -->
+        <div class="newsletter">
+          <h3>Subscribe to our newsletter</h3>
+          <form class="newsletter-form">
+            <input
+              type="email"
+              class="newsletter-input"
+              placeholder="Email address"
+              required
+            />
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+
+        <!-- Bottom Section -->
+        <div class="footer-bottom">
+          <p class="copyright">© 2025 BookTix. All rights reserved.</p>
+          <div class="legal-links">
+            <a href="#">Refund Policy</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Cookie Policy</a>
+            <a href="#">Cancellation Policy</a>
+            <a href="#">Support</a>
+            <a href="#">Copyright</a>
+            <a href="#">Payment Agreement</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Link to external JS file (create js/script.js) -->
+    <script src="script.js"></script>
+    <script></script>
+  </body>
+</html>
