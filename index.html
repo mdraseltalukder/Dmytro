@@ -143,10 +143,20 @@
     </section>
     <!-- hero-sec -->
     <section class="hero-sec">
+      <div class="overlay"></div>
+      <!-- video -->
+      <video autoplay muted loop plays-inline class="bg-video">
+        <source src="video/bg-video.mp4" type="video/mp4" />
+      </video>
+
+      <!-- bg-color  -->
+      <div class="hero-bg-bottom"></div>
+      <div class="hero-bg-left"></div>
+
       <div class="container">
         <div class="hero-content">
           <h1>Easy Online Ticketing With Real Support</h1>
-          <p>
+          <p class="hero-paragraph">
             You care deeply about your event and so do we. BookTix gives you
             real tools and real support, built by people who’ve stood where you
             stand.
@@ -309,10 +319,16 @@
 
           <div class="side-benefits">
             <div class="side-benefit">
-              <div class="benefit-number">02</div>
-              <h4 class="benefit-title">
-                Turn Ticketing Into a Fundraising Engine
-              </h4>
+              <div class="benefit-flex">
+                <div class="benefit-number">02</div>
+                <h4 class="benefit-title">
+                  Turn Ticketing Into a Fundraising Engine
+                </h4>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
+                unde iste nam maiores quidem vero?
+              </p>
             </div>
 
             <div class="side-benefit">
@@ -685,6 +701,23 @@
 
     <!-- Link to external JS file (create js/script.js) -->
     <script src="script.js"></script>
-    <script></script>
+    <script>
+      const sideBenefits = document.querySelectorAll(".side-benefit");
+
+      sideBenefits.forEach((benefit) => {
+        benefit.addEventListener("click", () => {
+          // check করবো যদি benefit এর ভিতরে p থাকে তাহলে remove করবো
+          const existingP = benefit.querySelector("p");
+
+          if (existingP) {
+            existingP.remove();
+          } else {
+            const p = document.createElement("p");
+            // p.textContent = "এই অংশে FAQ এর বিস্তারিত তথ্য দেখানো হবে।";
+            benefit.appendChild(p);
+          }
+        });
+      });
+    </script>
   </body>
 </html>
