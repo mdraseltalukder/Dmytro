@@ -463,7 +463,7 @@ p {
   color: #0065cc;
   font-size: 16px;
   font-weight: bold;
-  letter-spacing: 0.32rem;
+  letter-spacing: 0.32em;
   text-transform: uppercase;
   line-height: 100%;
   margin-bottom: 20px;
@@ -777,15 +777,6 @@ p {
 .header {
   text-align: center;
   margin-bottom: 60px;
-}
-
-.section-label {
-  color: #3b82f6;
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  margin-bottom: 20px;
 }
 
 .main-title {
@@ -1231,12 +1222,7 @@ p {
 }
 
 .header-text {
-  font-size: 0.875rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  color: #60a5fa;
   margin-bottom: 1.5rem;
-  text-transform: uppercase;
 }
 
 .main-heading-contact {
