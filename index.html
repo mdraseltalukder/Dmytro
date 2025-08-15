@@ -171,7 +171,7 @@
       </div>
     </section>
     <div class="container mobile-container">
-      <div class="hero-bg-bottom"></div>
+      <div class="hero-bg-mobile-bottom"></div>
       <div class="hero-bg-mobile-top"></div>
       <div class="hero-bg-mobile-left"></div>
       <div class="hero-content">
@@ -312,7 +312,7 @@
 
     <!-- benefit -->
     <section class="benefit-sec">
-      <div class="container">
+      <div class="benefit-container">
         <div class="header">
           <div class="section-label">BENEFITS</div>
           <h2 class="main-title">
@@ -325,78 +325,203 @@
         </div>
 
         <div class="benefits-grid">
-          <div class="main-benefit">
+          <div class="main-benefit-hidden main-benefit">
             <div class="benefit-content">
-              <div class="benefit-number">01</div>
-              <h4 class="">Make Every Seat Count</h4>
+              <div class="benefit-number" id="main-number">01</div>
+              <h4 class="benefit-title" id="main-title">
+                Make Every Seat Count
+              </h4>
             </div>
-            <p class="benefit-description">
-              From dance recitals to community productions, we simplify ticket
-              sales with reserved seating, promotion tools, and live tracking
-              for easy planning and upselling.
-            </p>
+            <div class="main-benefit-desc">
+              <p id="main-description">
+                From dance recitals to community productions, we simplify ticket
+                sales with reserved seating, promotion tools, and live tracking
+                for easy planning and upselling.
+              </p>
+            </div>
           </div>
 
+          <!-- Side Benefits -->
           <div class="side-benefits">
-            <div class="side-benefit" data-faq="1">
-              <div class="benefit-flex">
-                <div class="benefit-number">02</div>
-                <h4 class="benefit-title">
-                  Turn Ticketing Into a Fundraising Engine
-                </h4>
-                <!-- <div class="toggle-icon">+</div> -->
+            <div class="benefit-hidden side-benefit active" data-benefit="1">
+              <div class="benefit-bg-mobile-bottom"></div>
+              <div class="benefit-details">
+                <div class="benefit-bg-mobile-top"></div>
+                <div class="benefit-bg-mobile-top2"></div>
+                <div class="benefit-between">
+                  <div class="benefit-flex">
+                    <div class="benefit-number">01</div>
+                    <h4 class="benefit-title">Make Every Seat Count</h4>
+                  </div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6 mobile-only"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                    />
+                  </svg>
+                </div>
               </div>
-              <div class="benefit-desc">
+              <div class="benefit-desc mobile-only">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
-                  unde iste nam maiores quidem vero? Explicabo nesciunt
-                  voluptatum, quae consectetur impedit.
+                  From dance recitals to community productions, we simplify
+                  ticket sales with reserved seating, promotion tools, and live
+                  tracking for easy planning and upselling.
+                </p>
+              </div>
+            </div>
+            <div class="side-benefit" data-benefit="2">
+              <div class="benefit-bg-mobile-bottom"></div>
+              <div class="benefit-details">
+                <div class="benefit-bg-mobile-top"></div>
+                <div class="benefit-bg-mobile-top2"></div>
+                <div class="benefit-between">
+                  <div class="benefit-flex">
+                    <div class="benefit-number">02</div>
+                    <h4 class="benefit-title">
+                      Turn Ticketing Into a Fundraising Engine
+                    </h4>
+                  </div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6 mobile-only"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="benefit-desc mobile-only">
+                <p>
+                  From dance recitals to community productions, we simplify
+                  ticket sales with reserved seating, promotion tools, and live
+                  tracking for easy planning and upselling
                 </p>
               </div>
             </div>
 
-            <div class="side-benefit" data-faq="2">
-              <div class="benefit-flex">
-                <div class="benefit-number">03</div>
-                <h4 class="benefit-title">
-                  Grow a Loyal Audience, Not Just a Crowd
-                </h4>
+            <div class="side-benefit" data-benefit="3">
+              <div class="benefit-bg-mobile-bottom"></div>
+              <div class="benefit-details">
+                <div class="benefit-bg-mobile-top"></div>
+                <div class="benefit-bg-mobile-top2"></div>
+                <div class="benefit-between">
+                  <div class="benefit-flex">
+                    <div class="benefit-number">03</div>
+                    <h4 class="benefit-title">
+                      Grow a Loyal Audience, Not Just a Crowd
+                    </h4>
+                  </div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6 mobile-only"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                    />
+                  </svg>
+                </div>
               </div>
-              <div class="benefit-desc">
+              <div class="benefit-desc mobile-only">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Maiores eveniet, similique reprehenderit dolores! Consectetur
-                  adipisicing elit sed do eiusmod tempor.
+                  Build lasting relationships with your audience through
+                  personalized communications, loyalty programs, and data-driven
+                  insights that turn one-time attendees into lifelong
+                  supporters.
                 </p>
               </div>
             </div>
 
-            <div class="side-benefit" data-faq="3">
-              <div class="benefit-flex">
-                <div class="benefit-number">04</div>
-                <h4 class="benefit-title">All Your Event Data in One Place</h4>
+            <div class="side-benefit" data-benefit="4">
+              <div class="benefit-bg-mobile-bottom"></div>
+              <div class="benefit-details">
+                <div class="benefit-bg-mobile-top"></div>
+                <div class="benefit-bg-mobile-top2"></div>
+                <div class="benefit-between">
+                  <div class="benefit-flex">
+                    <div class="benefit-number">04</div>
+                    <h4 class="benefit-title">
+                      All Your Event Data in One Place
+                    </h4>
+                  </div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6 mobile-only"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                    />
+                  </svg>
+                </div>
               </div>
-              <div class="benefit-desc">
+              <div class="benefit-desc mobile-only">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Omnis, praesentium! Dolor sit amet consectetur adipisicing
-                  elit sed do eiusmod tempor incididunt.
+                  Access comprehensive analytics, attendee insights, and
+                  performance metrics in a unified dashboard that helps you make
+                  informed decisions and optimize future events.
                 </p>
               </div>
             </div>
 
-            <div class="side-benefit" data-faq="4">
-              <div class="benefit-flex">
-                <div class="benefit-number">05</div>
-                <h4 class="benefit-title">
-                  You Handle the Show and We'll Handle the Setup
-                </h4>
+            <div class="side-benefit" data-benefit="5">
+              <div class="benefit-bg-mobile-bottom"></div>
+              <div class="benefit-details">
+                <div class="benefit-bg-mobile-top"></div>
+                <div class="benefit-bg-mobile-top2"></div>
+                <div class="benefit-between">
+                  <div class="benefit-flex">
+                    <div class="benefit-number">05</div>
+                    <h4 class="benefit-title">
+                      You Handle the Show and We'll Handle the Setup
+                    </h4>
+                  </div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6 mobile-only"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                    />
+                  </svg>
+                </div>
               </div>
-              <div class="benefit-desc">
+              <div class="benefit-desc mobile-only">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Dolorum, doloremque! Consectetur adipisicing elit sed do
-                  eiusmod tempor incididunt ut labore.
+                  Focus on creating amazing experiences while we take care of
+                  the technical setup, payment processing, customer support, and
+                  all the behind-the-scenes work.
                 </p>
               </div>
             </div>
@@ -414,92 +539,404 @@
       <!-- <div class="section-header"></div> -->
 
       <div class="testimonial-container">
-        <div class="">
+        <div class="testimonial-content">
           <div class="section-label testimonial-label">
             The BookTix Difference, In Their Words
           </div>
-          <div class="testimonial-content">
-            <div class="testimonials">
-              <div class="testimonial">
-                <div class="rating">
-                  <div class="stars">
-                    <span class="star"><i class="fa-solid fa-star"></i></span>
-                    <span class="star"><i class="fa-solid fa-star"></i></span>
-                    <span class="star"><i class="fa-solid fa-star"></i></span>
-                    <span class="star"><i class="fa-solid fa-star"></i></span>
-                    <span class="star"><i class="fa-solid fa-star"></i></span>
-                  </div>
-                  <span class="rating-label">Dance Studio</span>
-                </div>
 
-                <div class="testimonial-text">
-                  <h2>
-                    Feature rich and <span class="highlight">easy to use</span>.
-                    They are super responsive whenever I have a question or
-                    request and are always happy to help.
-                  </h2>
+          <div class="testimonials">
+            <div class="testimonial">
+              <div class="rating">
+                <div class="stars">
+                  <span class="star"><i class="fa-solid fa-star"></i></span>
+                  <span class="star"><i class="fa-solid fa-star"></i></span>
+                  <span class="star"><i class="fa-solid fa-star"></i></span>
+                  <span class="star"><i class="fa-solid fa-star"></i></span>
+                  <span class="star"><i class="fa-solid fa-star"></i></span>
                 </div>
-
-                <div class="customer-info">
-                  <img
-                    src="img/Ellipse 129.png"
-                    alt="Chris Satola"
-                    class="customer-avatar"
-                  />
-                  <div class="customer-details">
-                    <div class="customer-detail">
-                      <h4>Chris Satola</h4>
-                      <p>Events manager</p>
-                    </div>
-                    <p>Garfield Heights Center For The Performing Arts / OH</p>
+                <span class="rating-label">Dance Studio</span>
+              </div>
+              <div class="testimonial-text">
+                <h2>
+                  Feature rich and <span class="highlight">easy to use</span>.
+                  They are super responsive whenever I have a question or
+                  request and are always happy to help.
+                </h2>
+              </div>
+              <div class="customer-info">
+                <img
+                  src="img/Ellipse 129.png"
+                  alt="Chris Satola"
+                  class="customer-avatar"
+                />
+                <div class="customer-details">
+                  <div class="customer-detail">
+                    <h4>Chris Satola</h4>
+                    <p>Events manager</p>
                   </div>
+                  <p>Garfield Heights Center For The Performing Arts / OH</p>
                 </div>
               </div>
             </div>
+            <div class="testimonial">
+              <div class="rating">
+                <div class="stars">
+                  <span class="star"><i class="fa-solid fa-star"></i></span>
+                  <span class="star"><i class="fa-solid fa-star"></i></span>
+                  <span class="star"><i class="fa-solid fa-star"></i></span>
+                  <span class="star"><i class="fa-solid fa-star"></i></span>
+                  <span class="star"><i class="fa-solid fa-star"></i></span>
+                </div>
+                <span class="rating-label">Creative Dance Hub</span>
+              </div>
+              <div class="testimonial-text">
+                <h2>
+                  Extremely flexible and
+                  <span class="highlight">easy to navigate</span>. The team
+                  always responds quickly and provides helpful guidance whenever
+                  needed.
+                </h2>
+              </div>
+              <div class="customer-info">
+                <img
+                  src="img/Ellipse-130.png"
+                  alt="Alex Johnson"
+                  class="customer-avatar"
+                />
+                <div class="customer-details">
+                  <div class="customer-detail">
+                    <h4>Alex Johnson</h4>
+                    <p>Studio Manager</p>
+                  </div>
+                  <p>Sunset Arts Center / CA</p>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial">
+              <div class="rating">
+                <div class="stars">
+                  <span class="star"><i class="fa-solid fa-star"></i></span>
+                  <span class="star"><i class="fa-solid fa-star"></i></span>
+                  <span class="star"><i class="fa-solid fa-star"></i></span>
+                  <span class="star"><i class="fa-solid fa-star"></i></span>
+                  <span class="star"><i class="fa-solid fa-star"></i></span>
+                </div>
+                <span class="rating-label">Dance Studio</span>
+              </div>
+              <div class="testimonial-text">
+                <h2>
+                  Feature rich and <span class="highlight">easy to use</span>.
+                  They are super responsive whenever I have a question or
+                  request and are always happy to help.
+                </h2>
+              </div>
+              <div class="customer-info">
+                <img
+                  src="img/Ellipse 129.png"
+                  alt="Chris Satola"
+                  class="customer-avatar"
+                />
+                <div class="customer-details">
+                  <div class="customer-detail">
+                    <h4>Chris Satola</h4>
+                    <p>Events manager</p>
+                  </div>
+                  <p>Garfield Heights Center For The Performing Arts / OH</p>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial">
+              <div class="rating">
+                <div class="stars">
+                  <span class="star"><i class="fa-solid fa-star"></i></span>
+                  <span class="star"><i class="fa-solid fa-star"></i></span>
+                  <span class="star"><i class="fa-solid fa-star"></i></span>
+                  <span class="star"><i class="fa-solid fa-star"></i></span>
+                  <span class="star"><i class="fa-solid fa-star"></i></span>
+                </div>
+                <span class="rating-label">Creative Dance Hub</span>
+              </div>
+              <div class="testimonial-text">
+                <h2>
+                  Extremely flexible and
+                  <span class="highlight">easy to navigate</span>. The team
+                  always responds quickly and provides helpful guidance whenever
+                  needed.
+                </h2>
+              </div>
+              <div class="customer-info">
+                <img
+                  src="img/Ellipse-130.png"
+                  alt="Alex Johnson"
+                  class="customer-avatar"
+                />
+                <div class="customer-details">
+                  <div class="customer-detail">
+                    <h4>Alex Johnson</h4>
+                    <p>Studio Manager</p>
+                  </div>
+                  <p>Sunset Arts Center / CA</p>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial">
+              <div class="rating">
+                <div class="stars">
+                  <span class="star"><i class="fa-solid fa-star"></i></span>
+                  <span class="star"><i class="fa-solid fa-star"></i></span>
+                  <span class="star"><i class="fa-solid fa-star"></i></span>
+                  <span class="star"><i class="fa-solid fa-star"></i></span>
+                  <span class="star"><i class="fa-solid fa-star"></i></span>
+                </div>
+                <span class="rating-label">Dance Studio</span>
+              </div>
+              <div class="testimonial-text">
+                <h2>
+                  Feature rich and <span class="highlight">easy to use</span>.
+                  They are super responsive whenever I have a question or
+                  request and are always happy to help.
+                </h2>
+              </div>
+              <div class="customer-info">
+                <img
+                  src="img/Ellipse 129.png"
+                  alt="Chris Satola"
+                  class="customer-avatar"
+                />
+                <div class="customer-details">
+                  <div class="customer-detail">
+                    <h4>Chris Satola</h4>
+                    <p>Events manager</p>
+                  </div>
+                  <p>Garfield Heights Center For The Performing Arts / OH</p>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial">
+              <div class="rating">
+                <div class="stars">
+                  <span class="star"><i class="fa-solid fa-star"></i></span>
+                  <span class="star"><i class="fa-solid fa-star"></i></span>
+                  <span class="star"><i class="fa-solid fa-star"></i></span>
+                  <span class="star"><i class="fa-solid fa-star"></i></span>
+                  <span class="star"><i class="fa-solid fa-star"></i></span>
+                </div>
+                <span class="rating-label">Creative Dance Hub</span>
+              </div>
+              <div class="testimonial-text">
+                <h2>
+                  Extremely flexible and
+                  <span class="highlight">easy to navigate</span>. The team
+                  always responds quickly and provides helpful guidance whenever
+                  needed.
+                </h2>
+              </div>
+              <div class="customer-info">
+                <img
+                  src="img/Ellipse-130.png"
+                  alt="Alex Johnson"
+                  class="customer-avatar"
+                />
+                <div class="customer-details">
+                  <div class="customer-detail">
+                    <h4>Alex Johnson</h4>
+                    <p>Studio Manager</p>
+                  </div>
+                  <p>Sunset Arts Center / CA</p>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial">
+              <div class="rating">
+                <div class="stars">
+                  <span class="star"><i class="fa-solid fa-star"></i></span>
+                  <span class="star"><i class="fa-solid fa-star"></i></span>
+                  <span class="star"><i class="fa-solid fa-star"></i></span>
+                  <span class="star"><i class="fa-solid fa-star"></i></span>
+                  <span class="star"><i class="fa-solid fa-star"></i></span>
+                </div>
+                <span class="rating-label">Dance Studio</span>
+              </div>
+              <div class="testimonial-text">
+                <h2>
+                  Feature rich and <span class="highlight">easy to use</span>.
+                  They are super responsive whenever I have a question or
+                  request and are always happy to help.
+                </h2>
+              </div>
+              <div class="customer-info">
+                <img
+                  src="img/Ellipse 129.png"
+                  alt="Chris Satola"
+                  class="customer-avatar"
+                />
+                <div class="customer-details">
+                  <div class="customer-detail">
+                    <h4>Chris Satola</h4>
+                    <p>Events manager</p>
+                  </div>
+                  <p>Garfield Heights Center For The Performing Arts / OH</p>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial">
+              <div class="rating">
+                <div class="stars">
+                  <span class="star"><i class="fa-solid fa-star"></i></span>
+                  <span class="star"><i class="fa-solid fa-star"></i></span>
+                  <span class="star"><i class="fa-solid fa-star"></i></span>
+                  <span class="star"><i class="fa-solid fa-star"></i></span>
+                  <span class="star"><i class="fa-solid fa-star"></i></span>
+                </div>
+                <span class="rating-label">Creative Dance Hub</span>
+              </div>
+              <div class="testimonial-text">
+                <h2>
+                  Extremely flexible and
+                  <span class="highlight">easy to navigate</span>. The team
+                  always responds quickly and provides helpful guidance whenever
+                  needed.
+                </h2>
+              </div>
+              <div class="customer-info">
+                <img
+                  src="img/Ellipse-130.png"
+                  alt="Alex Johnson"
+                  class="customer-avatar"
+                />
+                <div class="customer-details">
+                  <div class="customer-detail">
+                    <h4>Alex Johnson</h4>
+                    <p>Studio Manager</p>
+                  </div>
+                  <p>Sunset Arts Center / CA</p>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial">
+              <div class="rating">
+                <div class="stars">
+                  <span class="star"><i class="fa-solid fa-star"></i></span>
+                  <span class="star"><i class="fa-solid fa-star"></i></span>
+                  <span class="star"><i class="fa-solid fa-star"></i></span>
+                  <span class="star"><i class="fa-solid fa-star"></i></span>
+                  <span class="star"><i class="fa-solid fa-star"></i></span>
+                </div>
+                <span class="rating-label">Dance Studio</span>
+              </div>
+              <div class="testimonial-text">
+                <h2>
+                  Feature rich and <span class="highlight">easy to use</span>.
+                  They are super responsive whenever I have a question or
+                  request and are always happy to help.
+                </h2>
+              </div>
+              <div class="customer-info">
+                <img
+                  src="img/Ellipse 129.png"
+                  alt="Chris Satola"
+                  class="customer-avatar"
+                />
+                <div class="customer-details">
+                  <div class="customer-detail">
+                    <h4>Chris Satola</h4>
+                    <p>Events manager</p>
+                  </div>
+                  <p>Garfield Heights Center For The Performing Arts / OH</p>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial">
+              <div class="rating">
+                <div class="stars">
+                  <span class="star"><i class="fa-solid fa-star"></i></span>
+                  <span class="star"><i class="fa-solid fa-star"></i></span>
+                  <span class="star"><i class="fa-solid fa-star"></i></span>
+                  <span class="star"><i class="fa-solid fa-star"></i></span>
+                  <span class="star"><i class="fa-solid fa-star"></i></span>
+                </div>
+                <span class="rating-label">Creative Dance Hub</span>
+              </div>
+              <div class="testimonial-text">
+                <h2>
+                  Extremely flexible and
+                  <span class="highlight">easy to navigate</span>. The team
+                  always responds quickly and provides helpful guidance whenever
+                  needed.
+                </h2>
+              </div>
+              <div class="customer-info">
+                <img
+                  src="img/Ellipse-130.png"
+                  alt="Alex Johnson"
+                  class="customer-avatar"
+                />
+                <div class="customer-details">
+                  <div class="customer-detail">
+                    <h4>Alex Johnson</h4>
+                    <p>Studio Manager</p>
+                  </div>
+                  <p>Sunset Arts Center / CA</p>
+                </div>
+              </div>
+            </div>
+          </div>
 
-            <div class="testimonial-navigation">
-              <div class="nav-counter">
-                <span class="current">01</span> /
-                <span class="total">10</span>
+          <div class="testimonial-navigation">
+            <div class="hidden nav-counter">
+              <span class="current">01</span> / <span class="total">10</span>
+            </div>
+
+            <div class="nav-buttons">
+              <button class="nav-btn" onclick="previousTestimonial()">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                  width="20"
+                  height="20"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
+                  />
+                </svg>
+              </button>
+              <div class="mobile-indicators">
+                <div class="indicator-line"></div>
+                <div class="indicator-line"></div>
+                <div class="indicator-line"></div>
+                <div class="indicator-line"></div>
+                <div class="indicator-line"></div>
+                <div class="indicator-line"></div>
+                <div class="indicator-line"></div>
+                <div class="indicator-line"></div>
+                <div class="indicator-line"></div>
+                <div class="indicator-line"></div>
               </div>
-              <div class="nav-buttons">
-                <button class="nav-btn" onclick="previousTestimonial()">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="size-6"
-                    width="20"
-                    height="20"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
-                    />
-                  </svg>
-                </button>
-                <button class="nav-btn active" onclick="nextTestimonial()">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="size-6"
-                    width="20"
-                    height="20"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
-                    />
-                  </svg>
-                </button>
-              </div>
+
+              <button class="nav-btn" onclick="nextTestimonial()">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                  width="20"
+                  height="20"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                  />
+                </svg>
+              </button>
             </div>
           </div>
         </div>
@@ -772,31 +1209,76 @@
     <script src="script.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", () => {
-        const faqItems = document.querySelectorAll(".side-benefit");
+        const benefitsData = {
+          1: {
+            number: "01",
+            title: "Make Every Seat Count",
+            description:
+              "From dance recitals to community productions, we simplify ticket sales with reserved seating, promotion tools, and live tracking for easy planning and upselling.",
+          },
+          2: {
+            number: "02",
+            title: "Turn Ticketing Into a Fundraising Engine",
+            description:
+              "Transform every ticket sale into a fundraising opportunity with built-in donation options, sponsorship tools, and community engagement features that maximize your revenue potential.",
+          },
+          3: {
+            number: "03",
+            title: "Grow a Loyal Audience, Not Just a Crowd",
+            description:
+              "Build lasting relationships with your audience through personalized communications, loyalty programs, and data-driven insights that turn one-time attendees into lifelong supporters.",
+          },
+          4: {
+            number: "04",
+            title: "All Your Event Data in One Place",
+            description:
+              "Access comprehensive analytics, attendee insights, and performance metrics in a unified dashboard that helps you make informed decisions and optimize future events.",
+          },
+          5: {
+            number: "05",
+            title: "You Handle the Show and We'll Handle the Setup",
+            description:
+              "Focus on creating amazing experiences while we take care of the technical setup, payment processing, customer support, and all the behind-the-scenes work.",
+          },
+        };
 
-        faqItems.forEach((item) => {
+        const sidebenefits = document.querySelectorAll(".side-benefit");
+        const mainNumber = document.getElementById("main-number");
+        const mainTitle = document.getElementById("main-title");
+        const mainDescription = document.getElementById("main-description");
+
+        function updateMainBenefit(benefitId) {
+          const benefit = benefitsData[benefitId];
+          if (benefit) {
+            mainNumber.textContent = benefit.number;
+            mainTitle.textContent = benefit.title;
+            mainDescription.textContent = benefit.description;
+          }
+        }
+
+        sidebenefits.forEach((item) => {
           item.addEventListener("click", function () {
-            const isCurrentlyActive = this.classList.contains("active");
+            const benefitId = this.getAttribute("data-benefit");
 
-            // Close all FAQ items
-            faqItems.forEach((faq) => {
-              faq.classList.remove("active");
+            // আগেই active থাকলে remove করে return (mobile toggle)
+            if (window.innerWidth < 769 && this.classList.contains("active")) {
+              this.classList.remove("active");
+              return;
+            }
+
+            // অন্য সব item থেকে active remove করো
+            sidebenefits.forEach((benefit) => {
+              benefit.classList.remove("active");
             });
 
-            // If the clicked item wasn't active, open it
-            if (!isCurrentlyActive) {
-              this.classList.add("active");
+            // clicked item কে active করো
+            this.classList.add("active");
+
+            // ✅ শুধুমাত্র বড় স্ক্রিনে main benefit update হবে
+            if (window.innerWidth >= 769) {
+              updateMainBenefit(benefitId);
             }
           });
-        });
-
-        // Optional: Close FAQ when clicking outside
-        document.addEventListener("click", (e) => {
-          if (!e.target.closest(".side-benefit")) {
-            faqItems.forEach((faq) => {
-              faq.classList.remove("active");
-            });
-          }
         });
       });
     </script>

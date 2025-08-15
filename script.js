@@ -159,27 +159,40 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // todo
 //testimonial counter
-let currentTestimonial = 1;
-const totalTestimonials = 10;
+let currentTestimonial = 0;
+const testimonials = document.querySelectorAll(".testimonial");
+const totalTestimonials = testimonials.length;
+const counter = document.querySelector(".nav-counter .current");
+const indicators = document.querySelectorAll(".indicator-line");
+
+function showTestimonial(index) {
+  testimonials.forEach((t, i) => {
+    t.classList.remove("show");
+    if (i === index) t.classList.add("show");
+  });
+  counter.textContent = (index + 1).toString().padStart(2, "0");
+
+  // Reset all indicators and set the active one
+  indicators.forEach((indicator, i) => {
+    indicator.classList.remove("active");
+    if (i <= index) indicator.classList.add("active"); // Keep previous indicators active
+  });
+}
 
 function nextTestimonial() {
-  if (currentTestimonial < totalTestimonials) {
-    currentTestimonial++;
-    updateCounter();
-  }
+  currentTestimonial++;
+  if (currentTestimonial >= totalTestimonials) currentTestimonial = 0;
+  showTestimonial(currentTestimonial);
 }
 
 function previousTestimonial() {
-  if (currentTestimonial > 1) {
-    currentTestimonial--;
-    updateCounter();
-  }
+  currentTestimonial--;
+  if (currentTestimonial < 0) currentTestimonial = totalTestimonials - 1;
+  showTestimonial(currentTestimonial);
 }
 
-function updateCounter() {
-  const counter = document.querySelector(".nav-counter .current");
-  counter.textContent = currentTestimonial.toString().padStart(2, "0");
-}
+// Initialize first testimonial
+showTestimonial(currentTestimonial);
 
 // Add keyboard navigation
 document.addEventListener("keydown", function (e) {
