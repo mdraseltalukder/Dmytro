@@ -1,19 +1,36 @@
+
 document.addEventListener('DOMContentLoaded', () => {
   const mobileMenu = document.getElementById('mobileMenu');
   const mobileToggle = document.getElementById('mobileToggle');
   const mobileOverlay = document.getElementById('mobileOverlay');
 
+  // Icons inside toggle
+  const menuIcon = mobileToggle.querySelector('.menu'); // menu image
+  const closeIcon = mobileToggle.querySelector('.clear'); // cross image
+
   // Mobile menu open/close
   mobileToggle.addEventListener('click', () => {
-    mobileMenu.classList.toggle('active');
-    mobileOverlay.classList.toggle('active');
-    mobileToggle.classList.toggle('active');
+    const isOpen = mobileMenu.classList.contains('active');
+
+    if (isOpen) {
+      mobileMenu.classList.remove('active');
+      mobileOverlay.classList.remove('active');
+      menuIcon.style.display = 'block';
+      closeIcon.style.display = 'none';
+    } else {
+      mobileMenu.classList.add('active');
+      mobileOverlay.classList.add('active');
+      menuIcon.style.display = 'none';
+      closeIcon.style.display = 'block';
+    }
   });
 
+  // Overlay click closes menu
   mobileOverlay.addEventListener('click', () => {
     mobileMenu.classList.remove('active');
     mobileOverlay.classList.remove('active');
-    mobileToggle.classList.remove('active');
+    menuIcon.style.display = 'block';
+    closeIcon.style.display = 'none';
   });
 
   // Mobile dropdown toggle
@@ -34,5 +51,4 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
-
 
