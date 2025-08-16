@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../about.css">
+</head>
+<body>
+  <section>
+    <nav class="navbar">
+      <div class="nav-container">
+        <!-- Logo -->
+        <div class="logo-container">
+          <a href="/" class="logo"><img src="../img/logo.png" alt="logo" /></a>
+        </div>
+  
+        <!-- Desktop Menu -->
+        <ul class="nav-menu">
+          <li class="nav-item has-dropdown">
+            <a href="#" class="nav-link">
+              About Us
+            </a>
+  
+          </li>
+  
+          <li class="nav-item has-dropdown">
+            <a href="#" class="nav-link">
+              Why BookTix
+              <img src="../img/down-arrow.svg" alt="down-arrow" />
+            </a>
+  
+          </li>
+  
+          <li class="nav-item has-dropdown">
+            <a href="#" class="nav-link">
+              Customers
+              <img src="../img/down-arrow.svg" alt="down-arrow" />
+            </a>
+            <ul class="dropdown-menu">
+              <div class="consumer-part">
+                <div class="customer">
+                  <h4>Customers</h4>
+                  <div class="part-one">
+                    <div class="customer-part">
+                      <div class="ticket">
+                        <img src="../img/ticket.png" alt="">
+                      </div>
+                      <div class="ticket-info">
+                        <h3>School Theatre</h3>
+                        <p>Lorem ipsum dolor sit amet</p>
+                      </div>
+                    </div>
+                    <div class="customer-part">
+                      <div class="ticket">
+                        <img src="../img/headphone.png" alt="">
+                      </div>
+                      <div class="ticket-info">
+                        <h3>Dance Studio</h3>
+                        <p>Lorem ipsum dolor sit amet</p>
+                      </div>
+                    </div>
+                    <div class="customer-part">
+                      <div class="ticket">
+                        <img src="../img/more.png" alt="">
+                      </div>
+                      <div class="ticket-info">
+                        <h3>More</h3>
+                        <p>Lorem ipsum dolor sit amet</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="customer">
+  
+                  <div class="part-one">
+                    <div class="customer-part">
+                      <div class="ticket">
+                        <img src="../img/rocket.png" alt="">
+                      </div>
+                      <div class="ticket-info">
+                        <h3>School Athletics</h3>
+                        <p>Lorem ipsum dolor sit amet</p>
+                      </div>
+                    </div>
+                    <div class="customer-part">
+                      <div class="ticket">
+                        <img src="../img/community.png" alt="">
+                      </div>
+                      <div class="ticket-info">
+                        <h3>Dance Studio</h3>
+                        <p>Lorem ipsum dolor sit amet</p>
+                      </div>
+                    </div>
+  
+                  </div>
+                </div>
+              </div>
+            </ul>
+          </li>
+  
+          <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Resources</a></li>
+        </ul>
+  
+        <!-- Desktop Actions -->
+        <div class="nav-actions">
+          <div>
+            <div>
+  
+  
+              <li class="nav-item has-dropdown">
+                <a href="#" class="btn-outline btn">
+                  <img class="headset" src="../img/Headset.png" alt="headphone" />
+                  Get Help
+  
+                  <img src="../img/down-arrow.svg" alt="down-arrow"> </a>
+                <div class="dropdown-menu dropdown-part-2 ">
+                  <div class="btn-desktop-dropdown">
+                    <div class="btn-drop">
+                      <div class="btn-drop-img">
+                        <img src="../img/plus.png" alt="">
+                      </div>
+                      <div class="btn-drop-text">
+                        <h3>Ticket Buyers Support</h3>
+                        <p>Lorem ipsum dolor sit amet</p>
+                      </div>
+                    </div>
+                    <div class="btn-drop">
+                      <div class="btn-drop-img">
+                        <img src="../img/apple.png" alt="">
+                      </div>
+                      <div class="btn-drop-text">
+                        <h3>Knowledge Center</h3>
+                        <p>Lorem ipsum dolor sit amet</p>
+                      </div>
+                    </div>
+                  </div>
+                  </>
+  
+              </li>
+  
+  
+            </div>
+          </div>
+          <a href="#" class="btn btn-primary">
+            Let's Connect
+            <svg class="arrow-icon" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                clip-rule="evenodd" />
+            </svg>
+          </a>
+        </div>
+  
+        <!-- Mobile Toggle -->
+        <button class="mobile-toggle" id="mobileToggle">
+          <img class="menu" src="../img/menu.png" alt="">
+          <img class="clear" src="../img/Clear.png" alt="">
+        </button>
+  
+  
+      </div>
+    </nav>
+  
+    <!-- Mobile Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+  
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+  
+      <ul class="mobile-nav-list">
+        <li class="mobile-nav-item"><a href="#" class="mobile-nav-link">About Us</a></li>
+  
+        <li class="mobile-nav-item has-dropdown">
+          <a href="#" class="mobile-nav-link">
+            Why BookTix
+            <img src="../img/down-arrow.svg" alt="down-arrow" class="dropdown-arrow" />
+          </a>
+          <ul class="mobile-dropdown">
+  
+          </ul>
+        </li>
+  
+        <li class="mobile-nav-item has-dropdown">
+          <a href="#" class="mobile-nav-link">
+            Customers
+            <img src="../img/down-arrow.svg" alt="down-arrow" class="dropdown-arrow" />
+          </a>
+          <ul class="mobile-dropdown">
+            <div class="consumer-part">
+              <div class="customer">
+                <h4>Customers</h4>
+                <div class="part-one">
+                  <div class="customer-part">
+                    <div class="ticket">
+                      <img src="../img/ticket.png" alt="">
+                    </div>
+                    <div class="ticket-info">
+                      <h3>School Theatre</h3>
+                      <p>Lorem ipsum dolor sit amet</p>
+                    </div>
+                  </div>
+                  <div class="customer-part">
+                    <div class="ticket">
+                      <img src="../img/headphone.png" alt="">
+                    </div>
+                    <div class="ticket-info">
+                      <h3>Dance Studio</h3>
+                      <p>Lorem ipsum dolor sit amet</p>
+                    </div>
+                  </div>
+                  <div class="customer-part">
+                    <div class="ticket">
+                      <img src="../img/more.png" alt="">
+                    </div>
+                    <div class="ticket-info">
+                      <h3>More</h3>
+                      <p>Lorem ipsum dolor sit amet</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="customer">
+  
+                <div class="part-one">
+                  <div class="customer-part">
+                    <div class="ticket">
+                      <img src="../img/rocket.png" alt="">
+                    </div>
+                    <div class="ticket-info">
+                      <h3>School Athletics</h3>
+                      <p>Lorem ipsum dolor sit amet</p>
+                    </div>
+                  </div>
+                  <div class="customer-part">
+                    <div class="ticket">
+                      <img src="../img/community.png" alt="">
+                    </div>
+                    <div class="ticket-info">
+                      <h3>Dance Studio</h3>
+                      <p>Lorem ipsum dolor sit amet</p>
+                    </div>
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+          </ul>
+        </li>
+  
+        <li class="mobile-nav-item"><a href="#" class="mobile-nav-link">Pricing</a></li>
+        <li class="mobile-nav-item"><a href="#" class="mobile-nav-link">Resources</a></li>
+      </ul>
+  
+      <div class="mobile-actions">
+        <a href="#" class="btn-outline btn">
+          <img src="../img/Headset.png" alt="headphone" />
+          Get Help
+        </a>
+  
+  
+  
+        <a href="#" class="btn btn-primary">
+          Let's Connect
+          <svg class="arrow-icon" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd"
+              d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+              clip-rule="evenodd" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+  <script src="../script.js"></script>
+  <script src="../about.js"></script>
+</body>
+</html>
