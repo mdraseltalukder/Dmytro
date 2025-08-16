@@ -4,8 +4,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const mobileOverlay = document.getElementById("mobileOverlay");
   const mobileCloseBtn = document.getElementById("mobileCloseBtn");
 
-  const menuIcon = mobileToggle.querySelector(".menu");
-  const closeIcon = mobileToggle.querySelector(".clear");
+  // Icons inside toggle
+  const menuIcon = mobileToggle.querySelector(".menu"); // menu image
+  const closeIcon = mobileToggle.querySelector(".clear"); // cross image
 
   let dropdownTimeout;
   const desktopDropdownItems = document.querySelectorAll(
@@ -16,34 +17,44 @@ document.addEventListener("DOMContentLoaded", () => {
     const dropdown = item.querySelector(".dropdown-menu");
 
     if (dropdown) {
+      // Show dropdown immediately on mouse enter
       item.addEventListener("mouseenter", () => {
         clearTimeout(dropdownTimeout);
         dropdown.style.display = "block";
       });
 
+      // Hide dropdown with 0.6 second delay on mouse leave
       item.addEventListener("mouseleave", () => {
         dropdownTimeout = setTimeout(() => {
           dropdown.style.display = "none";
-        }, 50);
+        }, 600);
       });
 
+      // Keep dropdown open when hovering over dropdown content
       dropdown.addEventListener("mouseenter", () => {
         clearTimeout(dropdownTimeout);
         dropdown.style.display = "block";
       });
 
+      // Hide dropdown with delay when leaving dropdown content
       dropdown.addEventListener("mouseleave", () => {
         dropdownTimeout = setTimeout(() => {
           dropdown.style.display = "none";
-        }, 50);
+        }, 600);
       });
     }
   });
+
   function closeMobileMenu() {
     mobileMenu.classList.remove("active");
     mobileOverlay.classList.remove("active");
     menuIcon.style.display = "block";
     closeIcon.style.display = "none";
+    document.body.style.overflow = "";
+    document.body.style.position = "";
+    document.body.style.width = "";
+    document.body.style.height = "";
+    document.body.classList.remove("mobile-menu-open");
   }
 
   // Mobile menu open/close
@@ -57,6 +68,11 @@ document.addEventListener("DOMContentLoaded", () => {
       mobileOverlay.classList.add("active");
       menuIcon.style.display = "none";
       closeIcon.style.display = "block";
+      document.body.style.overflow = "hidden";
+      document.body.style.position = "fixed";
+      document.body.style.width = "100%";
+      document.body.style.height = "100%";
+      document.body.classList.add("mobile-menu-open");
     }
   });
 
@@ -77,9 +93,11 @@ document.addEventListener("DOMContentLoaded", () => {
     // Click functionality
     link.addEventListener("click", (e) => {
       e.preventDefault();
+      // Close other dropdowns
       dropdownItems.forEach((i) => {
         if (i !== item) i.classList.remove("active");
       });
+      // Toggle current dropdown
       item.classList.toggle("active");
     });
 
@@ -92,7 +110,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
-
 //  serve-section carousel
 class Carousel {
   constructor() {
