@@ -25,46 +25,154 @@
       rel="stylesheet"
     />
 
-    <!-- Add any other head CSS/SEO here -->
+ 
   </head>
   <body>
-    <section>
+   <section>
       <nav class="navbar">
         <div class="nav-container">
+          <!-- Logo -->
           <div class="logo-container">
             <a href="/" class="logo"><img src="img/logo.png" alt="logo" /></a>
           </div>
+
           <!-- Desktop Menu -->
           <ul class="nav-menu">
-            <li class="nav-item">
-              <a href="#" class="nav-link">About&nbsp;Us</a>
+            <li class="nav-item has-dropdown">
+              <a href="#" class="nav-link"> About&nbsp;Us </a>
             </li>
-            <li class="nav-item">
+
+            <li class="nav-item has-dropdown">
               <a href="#" class="nav-link">
                 Why&nbsp;BookTix
                 <img src="img/down-arrow.svg" alt="down-arrow" />
               </a>
             </li>
-            <li class="nav-item">
+
+            <li class="nav-item has-dropdown">
               <a href="#" class="nav-link">
                 Customers
                 <img src="img/down-arrow.svg" alt="down-arrow" />
               </a>
+              <ul class="dropdown-menu dropdown-part-1">
+                <div class="consumer-part">
+                  <div class="customer">
+                    <span class="customer-title">Customers</span>
+                    <div class="part-one">
+                      <a href="#" class="customer-part">
+                        <div class="ticket">
+                          <img src="img/ticket.png" alt="" />
+                        </div>
+                        <div class="ticket-info">
+                          <div class="flex-title">
+                            <h3>School Theatre</h3>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke-width="1.5"
+                              stroke="currentColor"
+                              class="size-6"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                              />
+                            </svg>
+                          </div>
+                          <p>Lorem ipsum dolor sit amet</p>
+                        </div>
+                      </a>
+                      <a href="#" class="customer-part">
+                        <div class="ticket">
+                          <img src="img/headphone.png" alt="" />
+                        </div>
+                        <div class="ticket-info">
+                          <h3>Dance Studio</h3>
+                          <p>Lorem ipsum dolor sit amet</p>
+                        </div>
+                      </a>
+                     
+
+                      <a href="#" class="customer-part">
+                        <div class="ticket">
+                          <img src="img/rocket.png" alt="" />
+                        </div>
+                        <div class="ticket-info">
+                          <h3>School Athletics</h3>
+                          <p>Lorem ipsum dolor sit amet</p>
+                        </div>
+                      </a>
+                      <a href="#" class="customer-part">
+                        <div class="ticket">
+                          <img src="img/headphone.png" alt="" />
+                        </div>
+                        <div class="ticket-info">
+                          <h3>Dance Studio</h3>
+                          <p>Lorem ipsum dolor sit amet</p>
+                        </div>
+                      </a>
+                       <a href="#" class="customer-part">
+                        <div class="ticket">
+                          <img src="img/more.png" alt="" />
+                        </div>
+                        <div class="ticket-info">
+                          <h3>More</h3>
+                          <p>Lorem ipsum dolor sit amet</p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </ul>
             </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Resources</a>
-            </li>
+
+            <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Resources</a></li>
           </ul>
 
           <!-- Desktop Actions -->
           <div class="nav-actions">
-            <a href="#" class="btn-outline btn">
-              <img src="img/Headset.png" alt="headphone" />
-              Get&nbsp;Help
-            </a>
+            <div>
+              <div>
+                <li class="nav-item has-dropdown has-dropdown-btn">
+                  <a href="#" class="btn-outline btn">
+                    <img
+                      class="headset"
+                      src="img/Headset.png"
+                      alt="headphone"
+                    />
+                    Get&nbsp;Help
+
+                    <img src="img/down-arrow.svg" alt="down-arrow" />
+                  </a>
+                  <div class="dropdown-menu dropdown-part-2">
+                    <div class="btn-desktop-dropdown">
+                      <span class="customer-title">Get Help</span>
+                      <div class="btn-drop">
+                        <div class="btn-drop-img">
+                          <img src="img/plus.png" alt="" />
+                        </div>
+                        <div class="btn-drop-text">
+                          <h3>Ticket Buyers Support</h3>
+                          <p>Lorem ipsum dolor sit amet</p>
+                        </div>
+                      </div>
+                      <div class="btn-drop">
+                        <div class="btn-drop-img">
+                          <img src="img/apple.png" alt="" />
+                        </div>
+                        <div class="btn-drop-text">
+                          <h3>Knowledge Center</h3>
+                          <p>Lorem ipsum dolor sit amet</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </div>
+            </div>
             <a href="#" class="btn btn-primary">
               Let's&nbsp;Connect
               <svg class="arrow-icon" viewBox="0 0 20 20" fill="currentColor">
@@ -79,42 +187,135 @@
 
           <!-- Mobile Toggle -->
           <button class="mobile-toggle" id="mobileToggle">
-            <span class="hamburger-line"></span>
-            <span class="hamburger-line"></span>
-            <span class="hamburger-line"></span>
+            <img class="menu" src="img/menu.png" alt="" />
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="clear size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18 18 6M6 6l12 12"
+              />
+            </svg>
           </button>
         </div>
       </nav>
 
       <!-- Mobile Overlay -->
-      <div class="mobile-overlay" id="mobileOverlay"></div>
+      <div class="mobile-overlay mobile-only" id="mobileOverlay"></div>
 
       <!-- Mobile Menu -->
       <div class="mobile-menu" id="mobileMenu">
-        <!-- close menu -->
-        <button
-          id="mobileClose"
-          class="mobile-close-btn"
-          aria-label="Close Menu"
-        >
-          &times;
-        </button>
         <ul class="mobile-nav-list">
           <li class="mobile-nav-item">
             <a href="#" class="mobile-nav-link">About Us</a>
           </li>
-          <li class="mobile-nav-item">
+
+          <li class="mobile-nav-item has-dropdown">
             <a href="#" class="mobile-nav-link">
               Why BookTix
-              <img src="img/down-arrow.svg" alt="down-arrow" />
+              <img
+                src="img/down-arrow.svg"
+                alt="down-arrow"
+                class="dropdown-arrow"
+              />
             </a>
+            <ul class="mobile-dropdown"></ul>
           </li>
-          <li class="mobile-nav-item">
+
+          <li class="mobile-nav-item has-dropdown">
             <a href="#" class="mobile-nav-link">
               Customers
-              <img src="img/down-arrow.svg" alt="down-arrow" />
+              <img
+                src="img/down-arrow.svg"
+                alt="down-arrow"
+                class="dropdown-arrow"
+              />
             </a>
+            <ul class="mobile-dropdown">
+              <div class="consumer-part">
+                <div class="customer">
+                  <div class="part-one">
+                    <a href="#" class="customer-part">
+                      <div class="ticket">
+                        <img
+                          src="img/mobile-nav1.png"
+                          alt=""
+                          width="20"
+                          height="20"
+                        />
+                      </div>
+                      <div class="ticket-info">
+                        <div class="flex-title">
+                          <h3>School Theatre</h3>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#" class="customer-part">
+                      <div class="ticket">
+                        <img
+                          src="img/mobile-nav2.png"
+                          alt=""
+                          width="20"
+                          height="20"
+                        />
+                      </div>
+                      <div class="ticket-info">
+                        <h3>Dance Studio</h3>
+                      </div>
+                    </a>
+
+                    <a href="#" class="customer-part">
+                      <div class="ticket">
+                        <img
+                          src="img/mobile-nav3.png"
+                          alt=""
+                          width="20"
+                          height="20"
+                        />
+                      </div>
+                      <div class="ticket-info">
+                        <h3>School Athletics</h3>
+                      </div>
+                    </a>
+                    <a href="#" class="customer-part">
+                      <div class="ticket">
+                        <img
+                          src="img/mobile-nav4.png"
+                          alt=""
+                          width="20"
+                          height="20"
+                        />
+                      </div>
+                      <div class="ticket-info">
+                        <h3>Dance Studio</h3>
+                      </div>
+                    </a>
+                    <a href="#" class="customer-part">
+                      <div class="ticket">
+                        <img
+                          src="img/mobile-nav5.png"
+                          alt=""
+                          width="20"
+                          height="20"
+                        />
+                      </div>
+                      <div class="ticket-info">
+                        <h3>More</h3>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </ul>
           </li>
+
           <li class="mobile-nav-item">
             <a href="#" class="mobile-nav-link">Pricing</a>
           </li>
@@ -128,6 +329,7 @@
             <img src="img/Headset.png" alt="headphone" />
             Get Help
           </a>
+
           <a href="#" class="btn btn-primary">
             Let's Connect
             <svg class="arrow-icon" viewBox="0 0 20 20" fill="currentColor">
@@ -206,62 +408,190 @@
         <div class="carousel-container">
           <div class="carousel-wrapper" id="carouselWrapper">
             <div class="carousel-card school-theatre">
-              <div class="card-title">School Theatre</div>
+              <div class="card-content">
+                <div class="card-title">School Theatre</div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6 mobile-only-carousel"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                  />
+                </svg>
+              </div>
               <div class="card-description">
                 Supporting drama programs and theatrical productions in
                 educational institutions.
               </div>
               <button class="explore-btn gradient-btn">Explore More</button>
+
+              <button class="nav-arrow prev">
+                <svg viewBox="0 0 24 24">
+                  <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+                </svg>
+              </button>
+
+              <button class="nav-arrow next">
+                <svg viewBox="0 0 24 24">
+                  <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+                </svg>
+              </button>
             </div>
 
             <div class="carousel-card dance-studios">
-              <div class="card-title">Dance Studios</div>
+              <div class="card-content">
+                <div class="card-title">Dance Studios</div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6 mobile-only-carousel"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                  />
+                </svg>
+              </div>
               <div class="card-description">
                 Empowering dance studios with flexible booking and performance
                 management tools.
               </div>
               <button class="explore-btn gradient-btn">Explore More</button>
+
+              <button class="nav-arrow prev">
+                <svg viewBox="0 0 24 24">
+                  <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+                </svg>
+              </button>
+
+              <button class="nav-arrow next">
+                <svg viewBox="0 0 24 24">
+                  <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+                </svg>
+              </button>
             </div>
 
-            <div class="carousel-card community-theatre active">
-              <div class="card-title">Community Theatre</div>
+            <div class="carousel-card community-theatre">
+              <div class="card-content">
+                <div class="card-title">Community Theatre</div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6 mobile-only-carousel"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                  />
+                </svg>
+              </div>
               <div class="card-description">
                 Avoid recital-day chaos with flexible seat assignments, VIP
                 pricing, and real-time support when you need it most.
               </div>
               <button class="explore-btn gradient-btn">Explore More</button>
+
+              <button class="nav-arrow prev">
+                <svg viewBox="0 0 24 24">
+                  <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+                </svg>
+              </button>
+
+              <button class="nav-arrow next">
+                <svg viewBox="0 0 24 24">
+                  <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+                </svg>
+              </button>
             </div>
 
             <div class="carousel-card sports-athletics">
-              <div class="card-title">School Sports & Athletics</div>
+              <div class="card-content">
+                <div class="card-title">School Sports & Athletics</div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6 mobile-only-carousel"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                  />
+                </svg>
+              </div>
               <div class="card-description">
                 Streamline ticket sales for sporting events and athletic
                 competitions.
               </div>
               <button class="explore-btn gradient-btn">Explore More</button>
+
+              <button class="nav-arrow prev">
+                <svg viewBox="0 0 24 24">
+                  <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+                </svg>
+              </button>
+
+              <button class="nav-arrow next">
+                <svg viewBox="0 0 24 24">
+                  <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+                </svg>
+              </button>
             </div>
 
             <div class="carousel-card and-more">
-              <div class="card-title">And More</div>
+              <div class="card-content">
+                <div class="card-title">And More</div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6 mobile-only-carousel"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                  />
+                </svg>
+              </div>
               <div class="card-description">
                 Discover additional services and solutions tailored to your
                 specific needs.
               </div>
               <button class="explore-btn gradient-btn">Explore More</button>
+
+              <button class="nav-arrow prev">
+                <svg viewBox="0 0 24 24">
+                  <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+                </svg>
+              </button>
+
+              <button class="nav-arrow next">
+                <svg viewBox="0 0 24 24">
+                  <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+                </svg>
+              </button>
             </div>
           </div>
-
-          <button class="nav-arrow prev" id="prevBtn">
-            <svg viewBox="0 0 24 24">
-              <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
-            </svg>
-          </button>
-
-          <button class="nav-arrow next" id="nextBtn">
-            <svg viewBox="0 0 24 24">
-              <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
-            </svg>
-          </button>
         </div>
       </div>
     </section>
@@ -1205,7 +1535,7 @@
       </div>
     </footer>
 
-    <!-- Link to external JS file (create js/script.js) -->
+   <!-- js -->
     <script src="script.js"></script>
    
   </body>
