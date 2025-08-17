@@ -41,6 +41,23 @@ p {
   line-height: 150%;
   letter-spacing: 0;
 }
+
+.gradient-btn {
+  background: linear-gradient(90deg, #3097ff 0%, #0065cc 27%, #5d00f3 100%);
+  color: white;
+  padding: 19px 35px;
+  border: none;
+  border-radius: 90px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.gradient-btn:hover {
+  box-shadow: 0px 6px 25px rgba(93, 0, 243, 0.6);
+}
 .btn {
   padding: 15px 25px;
   border-radius: 90px;
@@ -57,12 +74,30 @@ p {
   align-items: center;
   justify-content: center;
 }
+.outline-btn {
+  padding: 19px 35px;
+  border: 1px solid #0065cc;
+  border-radius: 90px;
+  background-color: transparent;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.outline-btn:hover {
+  background: linear-gradient(90deg, #3097ff 0%, #0065cc 27%, #5d00f3 100%);
+  color: white;
+  border-color: transparent;
+}
 .btn-primary {
   background: linear-gradient(90deg, #3097ff 0%, #0065cc 27%, #5d00f3 100%);
   color: white;
   border: 1px solid transparent;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  padding: 15px 25px;
 }
 
 .btn-primary:hover {
@@ -74,6 +109,7 @@ p {
   color: #0d2346;
   border: 1px solid #0065cc;
   transition: all 0.3s ease-in-out;
+  padding: 13px 20px;
 }
 
 .btn-outline:hover {
@@ -186,7 +222,7 @@ p {
 }
 
 .logo-container {
-  max-width: 282px;
+  width: 282px;
   display: flex;
   align-items: start;
   justify-content: start;
@@ -592,7 +628,7 @@ p {
   color: white;
 }
 .bg-line {
-  background-image: url("img/line.svg");
+  background-image: url("../img/home/line.svg");
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: contain;
@@ -609,39 +645,6 @@ p {
   display: flex;
   align-items: center;
   gap: 16px;
-}
-.gradient-btn {
-  background: linear-gradient(90deg, #3097ff 0%, #0065cc 27%, #5d00f3 100%);
-  color: white;
-  padding: 19px 35px;
-  border: none;
-  border-radius: 90px;
-  font-size: 18px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  text-decoration: none;
-}
-
-.gradient-btn:hover {
-  box-shadow: 0px 6px 25px rgba(93, 0, 243, 0.6);
-}
-.outline-btn {
-  padding: 19px 35px;
-  border: 1px solid #0065cc;
-  border-radius: 90px;
-  background-color: transparent;
-  color: white;
-  font-size: 18px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.outline-btn:hover {
-  background: linear-gradient(90deg, #3097ff 0%, #0065cc 27%, #5d00f3 100%);
-  color: white;
-  border-color: transparent;
 }
 
 /* serve-section */
@@ -743,7 +746,7 @@ p {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url("img/Vector3.png");
+  background-image: url("../img/home/Vector3.png");
   background-size: auto;
   background-repeat: no-repeat;
   background-position: top right;
@@ -759,7 +762,7 @@ p {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url("img/Vector4.png");
+  background-image: url("../img/home/Vector4.png");
   background-size: auto;
   background-repeat: no-repeat;
   background-position: bottom left;
@@ -1017,7 +1020,7 @@ p {
   position: relative;
   border-radius: 20px;
   overflow: hidden;
-  background-image: url(img/benefit.png);
+  background-image: url("../img/home/benefit.png");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -1727,6 +1730,12 @@ p {
   color: #3b82f6;
 }
 
+@media (max-width: 1280px) {
+  .logo-container {
+    max-width: fit-content;
+  }
+}
+
 @media (max-width: 1240px) {
   .nav-container {
     padding: 0 20px;
@@ -2000,7 +2009,7 @@ p {
   }
   .side-benefit.active.active .benefit-details {
     position: relative;
-    background-image: url("img/benefit.png");
+    background-image: url("../img/home/benefit.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
