@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sample Page with CSS, JS & Font Awesome</title>
+
+    <!-- Link to external CSS file (create css/style.css) -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/resources.css" />
+
+    <!-- Font Awesome (CDN) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!--  Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- navbar -->
+    <!-- render by js -->
+    <div id="navbarSection"></div>
+
+    <!-- single resources -->
+    <section class="single-resource-sec">
+      <div class="social-links-container">
+        <span class="share">SHARE</span>
+
+        <div class="vertical-line"></div>
+        <div class="social-links">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 640 640"
+            class="link"
+            fill="currentColor"
+            width="20"
+          >
+            <path
+              d="M240 363.3L240 576L356 576L356 363.3L442.5 363.3L460.5 265.5L356 265.5L356 230.9C356 179.2 376.3 159.4 428.7 159.4C445 159.4 458.1 159.8 465.7 160.6L465.7 71.9C451.4 68 416.4 64 396.2 64C289.3 64 240 114.5 240 223.4L240 265.5L174 265.5L174 363.3L240 363.3z"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 640 640"
+            class="link"
+            fill="currentColor"
+            width="20"
+          >
+            <path
+              d="M196.3 512L103.4 512L103.4 212.9L196.3 212.9L196.3 512zM149.8 172.1C120.1 172.1 96 147.5 96 117.8C96 103.5 101.7 89.9 111.8 79.8C121.9 69.7 135.6 64 149.8 64C164 64 177.7 69.7 187.8 79.8C197.9 89.9 203.6 103.6 203.6 117.8C203.6 147.5 179.5 172.1 149.8 172.1zM543.9 512L451.2 512L451.2 366.4C451.2 331.7 450.5 287.2 402.9 287.2C354.6 287.2 347.2 324.9 347.2 363.9L347.2 512L254.4 512L254.4 212.9L343.5 212.9L343.5 253.7L344.8 253.7C357.2 230.2 387.5 205.4 432.7 205.4C526.7 205.4 544 267.3 544 347.7L544 512L543.9 512z"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 640 640"
+            class="link"
+            fill="currentColor"
+            width="20"
+          >
+            <path
+              d="M453.2 112L523.8 112L369.6 288.2L551 528L409 528L297.7 382.6L170.5 528L99.8 528L264.7 339.5L90.8 112L236.4 112L336.9 244.9L453.2 112zM428.4 485.8L467.5 485.8L215.1 152L173.1 152L428.4 485.8z"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 640 640"
+            class="link"
+            fill="currentColor"
+            width="20"
+          >
+            <path
+              d="M332 70.5C229.4 70.5 128 138.9 128 249.6C128 320 167.6 360 191.6 360C201.5 360 207.2 332.4 207.2 324.6C207.2 315.3 183.5 295.5 183.5 256.8C183.5 176.4 244.7 119.4 323.9 119.4C392 119.4 442.4 158.1 442.4 229.2C442.4 282.3 421.1 381.9 352.1 381.9C327.2 381.9 305.9 363.9 305.9 338.1C305.9 300.3 332.3 263.7 332.3 224.7C332.3 158.5 238.4 170.5 238.4 250.5C238.4 267.3 240.5 285.9 248 301.2C234.2 360.6 206 449.1 206 510.3C206 529.2 208.7 547.8 210.5 566.7C213.9 570.5 212.2 570.1 217.4 568.2C267.8 499.2 266 485.7 288.8 395.4C301.1 418.8 332.9 431.4 358.1 431.4C464.3 431.4 512 327.9 512 234.6C512 135.3 426.2 70.5 332 70.5z"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 640 640"
+            class="link"
+            fill="currentColor"
+            width="20"
+          >
+            <path
+              d="M112 128C85.5 128 64 149.5 64 176C64 191.1 71.1 205.3 83.2 214.4L291.2 370.4C308.3 383.2 331.7 383.2 348.8 370.4L556.8 214.4C568.9 205.3 576 191.1 576 176C576 149.5 554.5 128 528 128L112 128zM64 260L64 448C64 483.3 92.7 512 128 512L512 512C547.3 512 576 483.3 576 448L576 260L377.6 408.8C343.5 434.4 296.5 434.4 262.4 408.8L64 260z"
+            />
+          </svg>
+        </div>
+      </div>
+      <div class="single-resource-container">
+        <div class="single-resources-links">
+          <a href="/">Home</a>
+          <span>/</span>
+          <a href="resources.html">Resources</a>
+          <span>/</span>
+          <a href="/">Category</a>
+          <span>/</span>
+          <span class="active-links" href="single-resources.html"
+            >Blog Single Page</span
+          >
+        </div>
+        <div class="single-resource-main-content">
+          <h2>This Is A Title Placeholder</h2>
+          <img
+            src="img/resources/Image (8).png"
+            alt=""
+            class="single-resource-image"
+          />
+        </div>
+        <div class="single-resource-content">
+          <p class="single-resources-paragraph">
+            Every successful brand is built on strong foundations that support
+            its mission, vision and core values. 91% of consumers are more
+            likely to do business with recognizable and memorable brands that
+            provide them with relevant offers. Why is that important?
+            <br />
+            <br />
+            Because recognizable messaging and tone of voice, memorable visuals
+            and core values that speak to the target audience all stem from a
+            well-thought-out brand strategy.
+          </p>
+          <div class="single-resource-tab">
+            <div class="toc-widget">
+              <div class="toc-header">
+                <h4 class="">Table Of Contents</h4>
+                <button class="hide-button" onclick="toggleTOC()">
+                  Hide
+                  <span class="arrow" id="arrow"
+                    ><img src="img/resources/arrow btn.png" alt=""
+                  /></span>
+                </button>
+              </div>
+              <div class="toc-content" id="tocContent">
+                <a href="#introduction" class="toc-link"
+                  >Introduction to the Resource Guide</a
+                >
+                <a href="#getting-started" class="toc-link"
+                  >Getting Started with Implementation</a
+                >
+                <a href="#advanced-features" class="toc-link"
+                  >Advanced Features and Configuration Options</a
+                >
+                <a href="#best-practices" class="toc-link"
+                  >Best Practices and Common Patterns</a
+                >
+                <a href="#troubleshooting" class="toc-link"
+                  >Section title as a link goes here in Line</a
+                >
+              </div>
+            </div>
+            <!-- content -->
+            <div class="page-content">
+              <section id="introduction" class="section">
+                <h2>Subtitle style that goes here</h2>
+                <p>
+                  Every successful brand is built on strong foundations that
+                  support its mission, vision and core values. 91% of consumers
+                  are more likely to do business with recognizable and memorable
+                  brands that provide them with relevant offers.
+                  <br /><br />
+                  Why is that important?
+                  <br /><br />
+                  Because recognizable messaging and tone of voice, memorable
+                  visuals and core values that speak to the target audience all
+                  stem from a well-thought-out brand strategy.
+                  <br /><br />
+                  Every successful brand is built on strong foundations that
+                  support its mission, vision and core values.
+                  <br /><br />
+                   91% of consumers are more likely to do business with
+                  recognizable and memorable brands that provide them with
+                  relevant offers. Why is that important?
+                  <br /><br />
+                  Because recognizable messaging and tone of voice, memorable
+                  visuals and core values that speak to the target audience all
+                  stem from a well-thought-out brand strategy.
+                </p>
+                <img src="img/resources/img1.png" alt="" />
+              </section>
+
+              <section id="getting-started" class="section">
+                <h2>Subtitle style that goes here</h2>
+                <p class="section-paragraph" style="margin-bottom: 38px">
+                  Because recognizable messaging and tone of voice, memorable
+                  visuals and core values that speak to the target audience all
+                  stem from a well-thought-out brand strategy. Every successful
+                  brand is built on strong foundations that support its mission,
+                  vision and core values.
+                </p>
+                <ul>
+                  <li>Every successful brand is built on strong foundations</li>
+                  <li>
+                    91% of consumers are more likely to do business with
+                    recognizable brands
+                  </li>
+                  <li>Successful brand is built on strong foundations</li>
+                  <li>Every successful brand is built on strong foundations</li>
+                  <li>Every successful brand is built on strong foundations</li>
+                  <li>
+                    91% of consumers are more likely to do business with
+                    recognizable brands
+                  </li>
+                </ul>
+                <p style="margin-bottom: 38px">
+                  Be sure to incorporate your brand presentation into your
+                  employee onboarding process. This will help you create a
+                  uniform company culture and infuse your internal and external
+                  relationships with a consistency that Forbes research has
+                  proven to be the basis of trust.
+                </p>
+              </section>
+
+              <div id="advanced-features" class="resource-action">
+                <h4 class="relative-heading">
+                  Title of call to action goes here
+                </h4>
+                <a href="#" class="btn btn-primary resource-btn"
+                  >Read Article
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="3"
+                    stroke="currentColor"
+                    class="size-7"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+
+              <section id="best-practices" class="single-categories-section">
+                <h4>Categories (tags):</h4>
+                <div class="single-resource-categories">
+                  <span class="resource-category">Category</span>
+                  <span class="resource-category">Category</span>
+                  <span class="resource-category">Category</span>
+                </div>
+              </section>
+
+              <section id="troubleshooting" class="section"></section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- relative articles -->
+    <section class="relative-articles-sec">
+      <div class="container">
+        <h2 class="related-heading">Related Articles</h2>
+        <div class="relative-articles">
+          <div class="single-article">
+            <div class="single-article-image">
+              <img src="img/resources/1 (6).png" alt="" class="" />
+            </div>
+            <span class="resource-category">Category</span>
+            <h4 class="relative-heading">
+              This is a title placeholder example using not more then 2 or 3
+              lines of text
+            </h4>
+          </div>
+          <div class="single-article">
+            <div class="single-article-image">
+              <img src="img/resources/1 (7).png" alt="" class="" />
+            </div>
+            <span class="resource-category">Category</span>
+            <h4 class="relative-heading">
+              This is a title placeholder example using not more then 2 or 3
+              lines of text
+            </h4>
+          </div>
+          <div class="single-article">
+            <div class="single-article-image">
+              <img src="img/resources/1 (9).png" alt="" class="" />
+            </div>
+            <span class="resource-category">Category</span>
+            <h4 class="relative-heading">
+              This is a title placeholder example using not more then 2 or 3
+              lines of text
+            </h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact -->
+    <!-- render by js -->
+    <div id="contactContainer"></div>
+
+    <!-- footer -->
+    <!-- render by js -->
+    <div id="footerSection"></div>
+
+    <!-- js -->
+    <script src="js/script.js"></script>
+    <script src="js/resources.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/contactSection.js"></script>
+    <script src="js/footer.js"></script>
+    <script>
+      renderNavbar("navbarSection");
+    </script>
+    <script>
+      renderContactSection("contactContainer");
+    </script>
+    <script>
+      renderFooter("footerSection");
+    </script>
+  </body>
+</html>

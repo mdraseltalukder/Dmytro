@@ -125,3 +125,52 @@ document.addEventListener("DOMContentLoaded", () => {
   initDropdowns();
   initSearch();
 });
+// single resources
+function toggleTOC() {
+  const content = document.getElementById("tocContent");
+  const arrow = document.getElementById("arrow");
+
+  content.classList.toggle("hidden");
+  arrow.classList.toggle("rotated");
+}
+
+// Smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute("href"));
+    if (target) {
+      target.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  });
+});
+
+// Highlight active section in TOC
+function updateActiveTOC() {
+  const sections = document.querySelectorAll(".section");
+  const tocLinks = document.querySelectorAll(".toc-link");
+
+  let current = "";
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.clientHeight;
+    if (window.scrollY >= sectionTop - 100) {
+      current = section.getAttribute("id");
+    }
+  });
+
+  tocLinks.forEach((link) => {
+    link.style.color = "#64748b";
+    link.style.fontWeight = "normal";
+    if (link.getAttribute("href") === "#" + current) {
+      link.style.color = "#3b82f6";
+      link.style.fontWeight = "600";
+    }
+  });
+}
+
+window.addEventListener("scroll", updateActiveTOC);
+window.addEventListener("load", updateActiveTOC);

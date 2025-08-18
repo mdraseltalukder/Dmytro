@@ -28,7 +28,9 @@ h2 {
   font-weight: 600;
   line-height: auto;
   letter-spacing: -0.02em;
+  color: #0d2346;
 }
+.hide-button,
 h4 {
   font-size: 24px;
   font-weight: 600;
@@ -36,7 +38,6 @@ h4 {
   letter-spacing: 0;
 }
 p {
-  font-size: 18px;
   font-weight: medium;
   line-height: 150%;
   letter-spacing: 0;
@@ -207,9 +208,10 @@ p {
 
 .navbar {
   background: white;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+
   z-index: 1000;
   padding: 15px 0;
+  border-bottom: 1px solid #0d234624;
 }
 
 .nav-container {
@@ -372,8 +374,8 @@ p {
 }
 
 .arrow-icon {
-  width: 14px;
-  height: 14px;
+  width: 18px;
+  height: 18px;
 }
 
 /* Mobile Menu Toggle */
@@ -1709,7 +1711,7 @@ p {
 }
 
 .copyright {
-  color: #64748b;
+  color: #0d2346;
   font-size: 14px;
 }
 
@@ -1752,7 +1754,7 @@ p {
     font-size: 34px;
   }
 
-  h4 {
+  .hide-button h4 {
     font-size: 20px;
   }
   .container {
@@ -2121,6 +2123,7 @@ p {
   h2 {
     font-size: 32px;
   }
+  .hide-button,
   h4 {
     font-size: 20px;
   }
